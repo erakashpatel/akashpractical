@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::any('/books/{locale?}','BookController@index')->name('books');
